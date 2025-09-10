@@ -11,7 +11,7 @@ app = FastAPI(
     description="A simple TODO application API built with FastAPI",
     version="1.0.0",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
 )
 
 app.add_middleware(
@@ -24,14 +24,16 @@ app.add_middleware(
 
 app.include_router(todos.router)
 
+
 @app.get("/")
 def read_root():
     return {
         "message": "Welcome to TODO API",
         "version": "1.0.0",
         "docs": "/docs",
-        "redoc": "/redoc"
+        "redoc": "/redoc",
     }
+
 
 @app.get("/health")
 def health_check():
