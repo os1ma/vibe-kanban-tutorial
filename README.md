@@ -1,82 +1,82 @@
-# TODO Application
+# TODOアプリケーション
 
-A modern TODO application built with Python and FastAPI.
+PythonとFastAPIで構築されたモダンなTODOアプリケーション。
 
-## Features
+## 機能
 
-- Create, read, update, and delete TODO items
-- RESTful API design
-- Type-safe with Python type hints
-- Fast and efficient with FastAPI
+- TODOアイテムの作成、読み取り、更新、削除
+- RESTful API設計
+- Python型ヒントによる型安全性
+- FastAPIによる高速で効率的な処理
 
-## Requirements
+## 必要要件
 
-- Python 3.11+
-- uv (for dependency management)
+- Python 3.11以上
+- uv（依存関係管理用）
 
-## Installation
+## インストール
 
-1. Clone the repository:
+1. リポジトリのクローン:
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone <リポジトリURL>
+cd <プロジェクトディレクトリ>
 ```
 
-2. Install dependencies using uv:
+2. uvを使用した依存関係のインストール:
 ```bash
 uv sync
 ```
 
-## Usage
+## 使用方法
 
-### Running the Application
+### アプリケーションの実行
 
-Start the development server:
+開発サーバーの起動:
 ```bash
 uv run uvicorn app.main:app --reload
 ```
 
-The API will be available at `http://localhost:8000`
+APIは `http://localhost:8000` でアクセス可能です
 
-### API Documentation
+### APIドキュメント
 
-Once the server is running, you can access:
-- Interactive API documentation (Swagger UI): `http://localhost:8000/docs`
-- Alternative API documentation (ReDoc): `http://localhost:8000/redoc`
+サーバー起動後、以下にアクセスできます:
+- インタラクティブAPIドキュメント（Swagger UI）: `http://localhost:8000/docs`
+- 代替APIドキュメント（ReDoc）: `http://localhost:8000/redoc`
 
-## Development
+## 開発
 
-### Running Tests
+### テストの実行
 ```bash
 uv run pytest
 ```
 
-### Linting and Formatting
+### リンティングとフォーマット
 ```bash
 uv run ruff check .
 uv run ruff format .
 ```
 
-### Type Checking
+### 型チェック
 ```bash
 uv run mypy .
 ```
 
-## Project Structure
+## プロジェクト構造
 
 ```
 .
 ├── app/
-│   ├── main.py          # FastAPI application entry point
-│   ├── models/          # Data models
-│   ├── routers/         # API route handlers
-│   └── services/        # Business logic
-├── tests/               # Test files
-├── pyproject.toml       # Project configuration and dependencies
-├── CLAUDE.md           # Development instructions
-└── README.md           # This file
+│   ├── main.py          # FastAPIアプリケーションのエントリーポイント
+│   ├── models/          # データモデル
+│   ├── routers/         # APIルートハンドラー
+│   └── services/        # ビジネスロジック
+├── tests/               # テストファイル
+├── pyproject.toml       # プロジェクト設定と依存関係
+├── CLAUDE.md           # 開発手順
+└── README.md           # このファイル
 ```
 
-## License
+## ライセンス
 
-[License information to be added]
+[ライセンス情報は後日追加予定]
