@@ -12,28 +12,45 @@ This is a TODO application project written in Python.
 
 ## Development Commands
 
+### Installing Dependencies
+```bash
+uv sync
+```
+
+### Adding Dependencies
+```bash
+uv add <package-name>
+```
+
+### Adding Dev Dependencies
+```bash
+uv add --dev <package-name>
+```
+
 ### Linting
 ```bash
-# Add linting command here when configured
+uv run ruff check .
+uv run ruff format .
 ```
 
 ### Type Checking
 ```bash
-# Add type checking command here when configured
+uv run mypy .
 ```
 
 ### Testing
 ```bash
-# Add test command here when configured
+uv run pytest
 ```
 
 ### Running the Application
 ```bash
-# Add run command here when configured
+uv run python -m todo_app
 ```
 
 ## Dependencies
-- Python
+- Python 3.11+
+- uv (for dependency management)
 
 ## Notes
 - This is a new TODO application project
