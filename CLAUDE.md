@@ -45,7 +45,7 @@ uv run pytest
 
 ### Running the Application
 ```bash
-uv run python -m todo_app
+uv run uvicorn app.main:app --reload
 ```
 
 ## Dependencies
